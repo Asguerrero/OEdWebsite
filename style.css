@@ -1,0 +1,65 @@
+body {
+    background-color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+ 	text-align: center;
+}
+
+h1{
+	
+	background-color: #87CEEB;
+	  
+}
+.container{
+	background-color: #87CEEB;
+	width: 50%;
+	margin: 10px 100px 10px 100px;
+	padding: 8px 8px 8px 8px;
+	
+	
+}
+
+.general-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+}
+
+.double{
+	display: grid;
+	grid-template-columns: 50% 50%;
+
+}
+
+.general-container input[type=submit]{
+
+    background-color: cornflowerblue;
+    border-color: lightsteelblue;
+    border-style: solid;
+    border-radius: 1px;
+    padding: 6px;
+    margin: 3px;
+
+}
+
+
+.general-container [type=text],
+.general-container [type=date],
+.general-container [type=email],
+.general-container [type=number]{
+   	width: 70%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+    resize: vertical;
+   }
+
+
+ select{
+ 	width: 20%;
+ 	padding: 6px;
+ 	box-sizing: border-box;
+    resize: vertical;
+ }

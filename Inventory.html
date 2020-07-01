@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Inventory</h1>
+	<div class="general-container">
+		<div class="container double">
+			<div style="border-right-style: solid;">
+				<h2>Search</h2>
+	            <form action="search_inventory.php" method="get">
+	                <input type="text" name="search2"/>
+	                <input type="submit" name="submit_search" value="Search"/>
+	            </form>
+			</div>
+			<div >
+				<h2>Display Table</h2>
+            	<form action="display_inventory.php" method="get">
+	                <select style="width: 60%;" name="option">
+	                <option>All</option>
+	                <option>Borrowed items</option>
+	                <option>Items in inventory</option>
+	                </select>
+	                <input type="submit" name="submit" value="Display"/>
+            	</form>
+			</div>
+		</div>
+		<div class="container">
+			<h2>Add action</h2>
+			    <form action="inventory_addAction.php" method="POST">
+			        <input type="text" name="TypeOfItem" placeholder="Type"/>
+			        <input type="number" name="NumberOfItem" placeholder="Number"/>
+			        <input type="email" name="EmailStudent" placeholder="Email of Student"/>
+			        <br>
+			        <select name="action">
+			            <option>Take</option>
+			            <option>Return</option>
+			        </select> 
+			        <input type="submit" name="Submit" value="Submit"/>
+			    </form>
+		</div>
+		<div class="container  double">
+			<div  style="border-right-style: solid;">
+				<h2>Add new item</h2>
+				    <form action="inventory_add.php" method="POST">
+				        <input type="text" name="NewItemType" placeholder="Type"/>
+				        <input type="number" name="NewItemNumber" placeholder="Number"/> <br>
+				        <input type="submit" name="submit" value="Submit"/>
+				    </form>
+			</div>
+			<div class="test">
+				<h2>Eliminate item</h2>
+				    <form action="inventory_eliminate.php" method="POST">
+				        <input type="text" name="ItemType" placeholder="Type"/>
+				        <input type="number" name="ItemNumber" placeholder="Number"/> <br>
+				        <input type="submit" name="Submit" value="Submit"/>
+				    </form>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
